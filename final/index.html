@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Castillo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            #hero{
+                background: url(assets/img/1.jpg);  
+	            background-size: cover;
+	            background-position: center;
+	            height:calc(100vh - 120px);
+	            display: flex;
+	            align-items: center;
+	            justify-content: center;
+            }
+            .overlay{
+                background:rgba(255,255,255,.75);
+                
+                width:70%;
+                height: 40%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                height:calc(100hv - 85px);
+            }
+            .overlay h1, overlay p{
+                color: #912E16;
+            }
+            .overlay .btn{
+                color:#B5391B;
+                border: 1px solid #B5391B;
+            }
+            .overlay .btn:hover{
+                color: #F45E44;
+                border: 1px solid #F45E44;
+            }
+            .proof{
+                min-height: 265px;
+            } 
+            p, h2{
+                height: 10%;
+                display:run-in;
+                text-align: center;
+            }
+           
+        </style>
+    </head>
+    <body>
+       <header>
+           <h1><a href="index.html" id="logo">Castillo</a></h1>
+       </header>
+
+    <!-- hero -->   
+        <div id="hero">
+           <div class="overlay">
+             <div>
+                  <h1>Lisseth Castillo</h1>
+                  <p> I enjoy designing and creating visual concepts.</p>
+                  <p><a href='#container1' class="btn"> My Work</a></p>
+             </div>
+           </div>
+        </div>
+         
+                <div id='container1'>
+            <h1> My Work</h1>
+        </div>
+        
+        <div class="container"> 
+            <div class="c33 p5">
+                <img src="assets/img/self.jpg">
+            </div>
+            <div class="c66 p25 ">
+                <h2> Self Portrait </h2>
+                <p>Using Illustrator I created a self portrait using only geometrical shapes </p>
+            </div>    
+            </div>   
+            
+         <div class="rcontainer"> 
+            <div class="c33 p10">
+                <img src="assets/img/poster.jpg">
+            </div>
+            <div class="c66 p150">
+                <h2> Poster</h2>
+                 <p>Made in Adobe Photoshop</p>
+            </div> 
+             </div>   
+          
+            
+          <div class="container"> 
+            <div class="c33 p5">
+                <img src="assets/img/lights.jpg">
+            </div>
+            <div class=" c66 p75">
+                <h2> Christams Tree</h2>
+                <p>An interactive Christams Tree using p5 Sketck. When you click the mouse the lights will begin to appear.<br><a href="https://htessil96.github.io/chritsmas-tree/p5/empty-example/" class="btn">Click Me</a>  </p>
+            </div>    
+            </div>  
+            
+          <div class="rcontainer"> 
+            <div class="c33 p10">
+                <img src="assets/img/travel.jpg">
+            </div>
+            <div class="c66 p25">
+                <h2> A Story</h2>
+                    <p>Decide where would you want to travel based on the things you love! <br><a href="https://htessil96.github.io/l/" class="btn">Click Me</a> </p>
+            </div>    
+        </div>
+        
+        <div class="container">
+            <div class="c33 p10">
+                <img src="assets/img/poster2.jpg">
+            </div>
+            <div class="c66 p150">
+                <h2>Typography Poster</h2>
+                <p><p>Made in Adobe InDesign</p>
+            </div>
+        </div>
+           
+        <div class="rcontainer">
+            <div class="c33 p10">
+                <img src="assets/img/invitation.jpg">
+            </div>
+            <div class="c66 p25">
+                <h2>Typography Poster</h2>
+                <p><p>Made in Adobe InDesign</p>
+            </div>
+        </div>
+        
+        <div class=" text tc ">
+            <h2> Contact Me</h2>
+             <p> castillo.lisseth11@gmail.com</p>
+            <div class="sm">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <footer> 
+                <p class="tc ">&copy; 2019 Lisseth Castillo</p>
+        </footer> 
+         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            
+            $('#mb').click(function(){
+                 $('nav').slideToggle();
+            });
+            $(window).resize(function(){
+                if(window.innerWidth > 499){
+                    $('nav').show();
+                }
+                
+            });
+        </script>
+    </body>
+</html>
